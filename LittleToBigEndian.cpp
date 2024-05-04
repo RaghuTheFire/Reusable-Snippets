@@ -39,7 +39,8 @@ double swapBytesDouble(double value)
 }
 
 // Function to swap for 64 bit data
-uint64_t swapBytesInt64(uint64_t value) {
+uint64_t swapBytesInt64(uint64_t value) 
+{
     uint64_t result = 0;
     result |= (value & 0x00000000000000FFULL) << 56;
     result |= (value & 0x000000000000FF00ULL) << 40;
